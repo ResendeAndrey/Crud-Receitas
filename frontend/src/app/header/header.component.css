@@ -1,0 +1,70 @@
+.navbar {
+  background-color: #8C041D;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+.navbar-search i {
+  position: absolute;
+  right: 0;
+  padding: 0 .2em;
+  color: #737380;
+  font-size: 1.7em;
+}
+.addrecipe-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  height: 2.5em;
+  padding: 0 em;
+  font-weight: 200;
+  color: white;
+  text-transform: uppercase;
+}
+.addrecipe-button i {
+font-size: 1.7em;
+}
+input::placeholder {
+  color: #737380;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: .9rem;
+}
+.navbar-logo h1 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navbar-logo h1:hover, .addrecipe-button:hover, .navbar-search i:hover, .navbar-options-item:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+.navbar-options {
+  background-color: white;
+  box-shadow:  0 10px 10px rgba(0,0,0,0.2);
+}
+.navbar-options ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-options-item {
+  list-style: none;
+  color: #737380;
+  text-transform: uppercase;
+padding: .5rem;
+  text-align: center;
+  font-size: .8rem;
+}
