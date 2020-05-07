@@ -11,7 +11,7 @@ module.exports = {
 
     async create(req, res) {
 
-        const {receitaId, autor, email, receitaNome, ingredientes, preparo, tempo, rendimento} = req.body;
+        const {receitaId, autor, email, receitaNome, ingredientes, preparo, tempo, rendimento, tipo} = req.body;
         await connection('receitas').insert({
             autor,
             email,
@@ -19,7 +19,8 @@ module.exports = {
             ingredientes,
             preparo,
             tempo,
-            rendimento
+            rendimento,
+            tipo
         })
 
         return res.json({autor, receitaNome, receitaId})

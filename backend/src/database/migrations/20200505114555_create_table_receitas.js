@@ -9,6 +9,7 @@ exports.up = function(knex) {
   table.string('preparo').notNullable();
   table.string('tempo').notNullable();
   table.string('rendimento').notNullable();
+  table.string('tipo').notNullable();
     });
   };
   
