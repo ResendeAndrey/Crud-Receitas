@@ -1,0 +1,34 @@
+.card .container  {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6em;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 1em;
+  height: 20em;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.card-content:hover {
+  cursor: pointer;
+  filter: brightness(95%);
+}
+.card-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.card-description {
+  text-align: center;
+}
+.card-footer {
+  font-size: .7rem;
+}
+.card-footer-author {
+  color: #8C041D;
+  font-weight: bold;
+}
