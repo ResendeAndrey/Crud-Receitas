@@ -1,13 +1,12 @@
 .footer {
-  background-color: #f0f0f5;
+  background-color: #fff;
   width: 100%;
-  position: absolute;
-  bottom: 0;
   box-shadow:   0px -10px  10px -10px  rgba(0,0,0,0.2);
   padding: 2em 0;
 }
 
 .footer .container {
+  height: 8em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,4 +48,15 @@
 .footer-author-image:hover, .fa-github:hover, .fa-linkedin-in:hover {
   cursor: pointer;
   filter: brightness(50%);
+}
+
+@media (max-width: 720px) {
+  .footer .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-author {
+    width: 60%;
+  }
 }

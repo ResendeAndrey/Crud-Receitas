@@ -1,7 +1,8 @@
 .card .container  {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 6em;
+  padding: 6em 0;
 }
 
 .card-content {
@@ -13,6 +14,7 @@
   margin: 1em;
   height: 20em;
   border: 1px solid rgba(0,0,0,0.1);
+  width: 30%;
 }
 .card-content:hover {
   cursor: pointer;
@@ -31,4 +33,10 @@
 .card-footer-author {
   color: #8C041D;
   font-weight: bold;
+}
+
+@media (max-width: 720px) {
+  .card-content {
+    width: 98%;
+  }
 }
