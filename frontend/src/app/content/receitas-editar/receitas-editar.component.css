@@ -1,6 +1,6 @@
 .recipe {
   padding: 10em 0;
-  min-height: 50em;
+  min-height: 45em;
 }
 .recipe-details-title {
   background-color: #fff;
@@ -22,6 +22,9 @@
   display: flex;
   justify-content: space-around;
   color: #737380;
+}
+.recipe-details-div input {
+  width: 90%;
 }
 .recipe-details-author,
 .recipe-details-time,
@@ -57,7 +60,7 @@
   font-size: 1.8rem;
   margin-bottom: 2.5em;
 }
-.recipe-details-ingredients p, .recipe-details-preparing p {
+.recipe-details-ingredients textarea, .recipe-details-preparing textarea {
   text-align: center;
   font-size: 1rem;
 }
@@ -80,4 +83,15 @@
 }
 .button-cancel button:hover, .button-edit button:hover {
   filter: brightness(80%);
+}
+input::placeholder, textarea::placeholder {
+  color:#404040;
+  font-weight: 400;
+  text-align: center;
+}
+input, textarea {
+  border-color: #404040;
+}
+input:focus, textarea:focus{
+  filter: brightness(95%);
 }
